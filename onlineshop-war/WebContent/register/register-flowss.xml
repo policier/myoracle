@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config 
+	version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+	http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+	>
+	<flow-definition id="register">
+		<start-node>register_start</start-node>
+		<view id="register_start">
+		<vdl-document>register</vdl-document>
+		</view>  
+		<flow-return id="register_return">
+			<from-outcome>/index</from-outcome>
+		</flow-return>
+		<navigation-rule>
+				<from-view-id>/register/register2.xhtml</from-view-id>
+			<navigation-case>
+				<from-action>#{registerController.step1}</from-action>
+				<from-outcome>register1</from-outcome>
+				<to-view-id>/register/register1.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+			<navigation-case>
+				<from-action>#{registerController.step2}</from-action>
+				<from-outcome>register2</from-outcome>
+				<to-view-id>/register/register2.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+			<navigation-case>
+				<from-action>#{registerController.perist}</from-action>
+				<from-outcome>success</from-outcome>
+				<to-view-id>/register/confirm.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+			<navigation-case>
+				<from-action>#{registerController.persist}</from-action>
+				<from-outcome>failure</from-outcome>
+				<to-view-id>/register/reject.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+		</navigation-rule>
+			<flow-call id="sell">
+			<flow-reference>
+				<flow-id>sell</flow-id>
+			</flow-reference>
+			<outbound-parameter>
+			<name>customerid</name>
+			<value>#{registerController.customer.id}</value>
+			</outbound-parameter>
+		</flow-call>
+	</flow-definition>
+</faces-config>

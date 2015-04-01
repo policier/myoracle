@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14163260171160" configfile="/onlineshop-war/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="1330" id="pf14165083528043" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14165083528054 pf14165144046252 pf14165144046253 pf14165144046254 pf14165144046255 pf14180553261050 pf14180553261051 pf14180553261052" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="178" id="pf141650835280512" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14165083528054" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register/register.xhtml" x="122" y="1714" id="pf14165144046258" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" path="/register/register.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="signin.xhtml" x="338" y="562" id="pf14165144046259" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14180553261051" path="/signin.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="sell.xhtml" x="338" y="946" id="pf141651440462510" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf14165144046252" path="/sell.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="search.xhtml" x="338" y="1330" id="pf141651440462511" referenceLink="//@navigationRule.0/@navigationCase.4/@toViewId|" inlinks="pf14165144046253" path="/search.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register/register1.xhtml" x="338" y="1714" id="pf141651440462512" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14165144046254" path="/register/register1.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register/register2.xhtml" x="338" y="2098" id="pf141651440462513" referenceLink="//@navigationRule.0/@navigationCase.6/@toViewId|" inlinks="pf14165144046255" path="/register/register2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register/confirm.xhtml" x="122" y="2098" id="pf141651440462514" referenceLink="//@navigationRule.0/@navigationCase.7/@toViewId|" path="/register/confirm.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register/reject.xhtml" x="122" y="2482" id="pf141651440462515" referenceLink="//@navigationRule.0/@navigationCase.8/@toViewId|" path="/register/reject.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register.xhtml" x="338" y="2482" id="pf14180553261063" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14180553261050" path="/register.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="signin1.xhtml" id="pf14180553261064" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14180553261052" path="/signin1.xhtml"/>
+  <links id="pf14165083528054" target="pf141650835280512" source="pf14165083528043" outcome="index" redirect="true"/>
+  <links id="pf14165144046252" target="pf141651440462510" source="pf14165083528043" outcome="sell" redirect="true"/>
+  <links id="pf14165144046253" target="pf141651440462511" source="pf14165083528043" outcome="search" redirect="true"/>
+  <links id="pf14165144046254" target="pf141651440462512" source="pf14165083528043" outcome="register1" redirect="true" fromaction="#{registerController.step1}"/>
+  <links id="pf14165144046255" target="pf141651440462513" source="pf14165083528043" outcome="register1" redirect="true" fromaction="#{registerController.saveEmail()}"/>
+  <links id="pf14180553261050" target="pf14180553261063" source="pf14165083528043" outcome="register" redirect="true"/>
+  <links id="pf14180553261051" target="pf14165144046259" source="pf14165083528043" outcome="signin" redirect="true"/>
+  <links id="pf14180553261052" target="pf14180553261064" source="pf14165083528043" outcome="signin1" redirect="true"/>
+</pageflow:Pageflow>

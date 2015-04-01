@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:body>
+<ui:composition template="/index.xhtml">
+<ui:define name="content">
+	<h:form id="sellForm" prependId="false">
+	<h:message for="sellForm" infoStyle="color: green" warnStyle="color: red" />   
+		<h:panelGrid  columns="2">  
+			<f:facet name="header">
+				<h:outputText value="#{msg['sell']} #{msg['step']} 1" />
+			</f:facet>
+			
+			<h:panelGroup>
+			<h:inputText     value="#{sellController.item.title}"  id="title" label="#{msg['item.title']}" />
+			<h:messages fot="title" />
+			</h:panelGroup>
+		
+			<h:outputLabel   value="#{msg['item.description']}:" for="description" />
+			
+			<h:panelGroup>
+			<h:inputTextarea id="description" value="#{sellController.item.description}" label="#{msg['item.description']}" required="true" />
+			<h:messages fot="description" />
+			</h:panelGroup>
+
+			<h:outputLabel   value="#{msg['item.price']}:" for="price"/>
+
+			<h:panelGroup>
+			<h:inputTextarea id="price" value="#{sellController.item.price}" label="#{msg['item.price']}" label="#{msg['item.price']}" required="true" />
+			<h:messages fot="price" />
+			</h:panelGroup>
+
+			<h:commandButton id="sell2" value="#{msg['sell']} 2" action="step2" />
+		</h:panelGrid>
+	</h:form>
+</ui:define>
+	</ui:composition>
+</h:body>
+</html>

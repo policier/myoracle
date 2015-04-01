@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<monitors>
+  <monitor contentTypes="" port="8081" portId="server" serverId="GlassFish 4 at localhost [domain1]" started="true"/>
+</monitors>

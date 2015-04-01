@@ -1,0 +1,35 @@
+<html template="template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:body>
+		<h:messages/>
+		<h:form>
+				ChatRoom:
+				<h:inputText value="#{chatController.room}" />
+				<br/>
+				Name:
+				<h:inputText value="#{chatController.name}" />
+				<br/>
+				Text:
+				<h:inputText value="#{chatController.text}" />
+				<br/>
+				<h:commandButton value="send" action="#{chatController.send()}" />
+		</h:form>
+			<h:dataTable value="#{chatController.messages}" var="message">
+				<h:column>
+						<h:outputText value="#{message.room}" />
+				</h:column>   
+				<h:column>
+						<h:outputText value="#{message.name}" />
+				</h:column>
+				<h:column>
+						<h:outputText value="#{message.text}" />
+				</h:column>
+				<h:column>
+					<h:graphicImage url="image?id=#{item.id}" />
+				</h:column>
+			</h:dataTable>
+	</h:body>
+</html>

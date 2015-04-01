@@ -1,0 +1,60 @@
+1416237788035	Extract local variable 'em'
+1416237983326	Extract local variable 'query'
+1416238124067	Extract local variable 'singleResult'
+1416238568018	Extract local variable 'em'
+1416239435566	Extract local variable 'em'
+1416239485116	Extract local variable 'createQuery'
+1416239652426	Extract local variable 'itemList'
+1416239733334	Infer generic type arguments
+1416240401561	Extract local variable 'em'
+1416240550531	Extract local variable 'query'
+1416240676823	Extract local variable 'singleResult'
+1416242312063	Extract local variable 'bytefoto'
+1416242483834	Extract local variable 'inputSream'
+1416242663424	Extract local variable 'readerInputStream'
+1416242792575	Extract local variable 'readerInputStream'
+1416244814808	Extract local variable 'em'
+1416244998717	Extract local variable 'query'
+1416253731962	Extract local variable 'cb'
+1416253783303	Extract local variable 'cq'
+1416253843211	Extract local variable 'c'
+1416253906284	Extract local variable 'currentEmail'
+1416254071054	Extract local variable 'p'
+1416254315128	Extract local variable 'typedQuery'
+1416257427198	Extract local variable 'accessData'
+1416258444697	Extract local variable 'emails'
+1416326409869	Delete element
+1416326426117	Delete elements
+1416413550215	Copy file
+1416413822507	Copy compilation unit
+1416413894772	Rename type 'signinRegisterController'
+1416414018433	Extract local variable 'em'
+1416414168462	Extract local variable 'query'
+1416414426323	Extract local variable 'singleResult'
+1416417459079	Move 'css' to 'resources'
+1416417462869	Move 'img' to 'resources'
+1416418403086	Move 'resources' to 'WEB-INF'
+1416419107003	Rename type 'signinController'
+1416420102684	Extract local variable 'em'
+1416420211453	Extract local variable 'customer'
+1416420431666	Extract local variable 'inputStream'
+1416420532583	Extract local variable 'out'
+1416421582011	Copy file
+1416501129267	Copy file
+1416501140405	Copy file
+1416504207074	Copy file
+1416504273640	Rename resource 'register-flow.xml'
+1416506237714	Extract local variable 'fc'
+1416506253033	Extract local variable 'app'
+1416506271363	Extract local variable 'fh'
+1416506301846	Extract local variable 'cfs'
+1416507545374	Rename resource 'register-flow.xml'
+1416507579701	Rename resource 'register-flow.xml'
+1416508386117	Rename resource 'register-flowsss.xml'
+1416514255090	Rename resource 'register-flow.xml'
+1416514971411	Delete element
+1416515029146	Rename resource 'sell-flow.xml'
+1416759451787	Copy folders
+1416759459752	Delete element
+1416759465272	Delete element
+1416759472612	Delete element

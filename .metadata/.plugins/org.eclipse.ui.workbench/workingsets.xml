@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1427302877335_2" label="jsf22-examples" name="jsf22-examples">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-cdi-view-scope" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-resource-dir" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-contracts" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-contracts-webapp" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-input-file" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-reset-values" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-view-action" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-cc-empty-attribute" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-flows" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-examples" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-composite-component-tags" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-html5" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-contracts-contract3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-ajaxdelay" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jsf22-collection-data-model" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1415809714243_0" label="Window Working Set" name="Aggregate for window 1415809714243"/>
+</workingSetManager>

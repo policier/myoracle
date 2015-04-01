@@ -1,0 +1,35 @@
+package de.java2enterprise.onlineshop.ejb;
+
+import javax.ejb.MessageDriven;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.MessageListener;
+import javax.jms.TextMessage;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.websocket.server.ServerEndpoint;
+
+import de.java2enterprise.onlineshop.model.ChatMessage;
+@ServerEndpoint("/chat")
+@MessageDriven(mappedName="jms/ChatTopic")
+public class ChatListener implements MessageListener{
+	
+@PersistenceContext
+EntityManager em;
+@Override
+public void onMessage(Message message) {
+//	// TODO Auto-generated method stub
+//	ChatMessage m = new ChatMessage();
+//	try {
+//		m.setRoom(message.getStringProperty("ROOM"));
+//		m.setName(message.getStringProperty("NAME"));
+//		m.setText(((TextMessage)message).getText());
+//		em.persist(m);
+//	} catch (JMSException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+}
+
+
+}

@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+	<ui:composition template="/index.xhtml">
+		<ui:define name="content">
+			<h:form id="registerForm" prependId="false">
+				<h:message for="registerForm"  infoStyle="color: grean"  warnStyle="color:red"/>
+				<h:panelGrid columns="2">
+					<f:facet name="header">
+						<h:outputText id="o1" value="#{msg['register']} #{msg['step']} 2:" />
+					</f:facet>
+					<h:outputLabel value="#{msg['password']}" />
+					<h:panelGroup>
+					<h:inputSecret id="password"
+						label="#{msg['password']}"
+						value="#{registerController.password}" required="true">
+						<f:validateLength minimum="6" maximum="10" />
+					</h:inputSecret>
+					</h:panelGroup>
+					
+					<h:commandButton id="step1" value="#{msg['step']} 1" action="#{registerController.step1}" />
+					<h:commandButton id="persist" value="#{msg['register']}" action="#{registerController.savePassword()}" />
+				</h:panelGrid>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

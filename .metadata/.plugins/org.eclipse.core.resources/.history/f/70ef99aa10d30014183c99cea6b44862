@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="jsf22-view-action">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <property name="context-root" value="jsf22-view-action"/>
+        <property name="java-output-path" value="/jsf22-view-action/target/classes"/>
+    </wb-module>
+</project-modules>

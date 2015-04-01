@@ -1,0 +1,13 @@
+1424355630546	Extract local variable 'initialContext'
+1424355793073	Extract local variable 'lookup'
+1424356050463	Extract local variable 'session'
+1424356107128	Extract local variable 'scanner'
+1424356178704	Extract local variable 'String'
+1424356350400	Extract local variable 'producer'
+1424356385485	Extract local variable 'message'
+1424356459322	Copy compilation unit
+1424357176173	Extract local variable 'receive'
+1424475191057	Copy files
+1424475198288	Delete elements
+1424475600207	Copy file
+1424475818167	Delete element

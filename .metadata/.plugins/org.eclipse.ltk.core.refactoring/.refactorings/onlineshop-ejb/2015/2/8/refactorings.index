@@ -1,0 +1,13 @@
+1424354754140	Delete element
+1424354803314	Delete element
+1424359352759	Extract local variable 'connection'
+1424359440564	Extract local variable 'session'
+1424363118113	Extract local variable 'producer'
+1424363146430	Extract local variable 'textMessage'
+1424375984788	Move compilation unit
+1424415955140	Extract local variable 'chatMessage'
+1424475020851	Copy file
+1424475029492	Copy file
+1424475038188	Delete element
+1424475098590	Copy file
+1424475109376	Delete element
